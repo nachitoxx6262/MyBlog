@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
       </Head>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/" className={styles.backText}>← Back to home</Link>
+          <Link href="/" className={styles.backText}>← Volver a home</Link>
         </div>
       )}
       <header className={styles.header}>

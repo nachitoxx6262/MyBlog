@@ -23,7 +23,7 @@ export default function Home() {
 
           <Link href="/learn/learningzone" className={styles.card}>
             <h3>Zona de aprendizaje &rarr;</h3>
-            <p>Quieres aprender sobre las tecnologias Web?</p>
+            <p>Quieres aprender sobre las tecnologias Web?🧠</p>
           </Link>
 
           <a
