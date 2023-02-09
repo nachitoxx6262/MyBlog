@@ -8,12 +8,15 @@
     "lint:fix": "eslint ./ --fix"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "next": "latest",
+    "next-redux-wrapper": "^8.1.0",
     "prettier": "^2.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
