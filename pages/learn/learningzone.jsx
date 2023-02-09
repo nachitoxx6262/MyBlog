@@ -21,7 +21,7 @@ export default function LearningZone() {
         {data?.map((element)=>{return (
           <>
         <h2>{element.title}</h2>
-        <p>{element.description}</p>
+        <p dangerouslySetInnerHTML={{__html: element.description}} />
           </>
         )})}
       </Layout>
