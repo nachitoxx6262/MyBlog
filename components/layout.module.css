@@ -12,4 +12,9 @@
   
   .backToHome {
     margin: 3rem 0 0;
+
+  }
+  .backText{
+    color: #e53170;
+    text-decoration: none;
   }

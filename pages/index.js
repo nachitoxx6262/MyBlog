@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <Link href="http://localhost:3000/posts/first-post">NachDev´s Blog!</Link>
+          Welcome to <span className={styles.span}>NachDev´s Blog!</span>
         </h1>
 
         <div className={styles.grid}>
@@ -21,13 +21,13 @@ export default function Home() {
             <p>Here you can see all the projects I did</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn  JavaScript &rarr;</h3>
-            <p>Do you want to learn about javascript? Click here!!</p>
+          <a href="http://localhost:3000/learn/learningzone" className={styles.card}>
+            <h3>Learning zone &rarr;</h3>
+            <p>Do you want to learn about the latest technologies?</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://github.com/nachitoxx6262"
             className={styles.card}
           >
             <h3>GitHub &rarr;</h3>
@@ -35,10 +35,10 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/ignacio-peniamaria-591865183/"
             className={styles.card}
           >
-            <h3>Curriculum Vitae &rarr;</h3>
+            <h3>LinkedIn &rarr;</h3>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
@@ -47,19 +47,12 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          <span> Ignacio Peñamaria</span>
-        </a>
+        <p>Powered by<span className={styles.span}> Ignacio Peñamaria</span></p>
       </footer>
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;

@@ -7,8 +7,8 @@
   align-items: center;
 }
 
-.title a {
-  color: #0070f3;
+.span{
+  color: #ff8906;
   text-decoration: none;
 }
 
@@ -56,7 +56,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #f68700;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -64,8 +64,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #ff8906;
+  border-color: #ff8906;
 }
 
 .card h3 {
