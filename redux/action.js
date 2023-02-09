@@ -1,15 +1,7 @@
 import data from "./data"
 export const actionTypes = {
-  ADD: 'ADD',
-  TICK: 'TICK',
+  POST: 'POST',
 };
-export const addCount = () => dispatch => {
-  return dispatch({ type: actionTypes.ADD });
-};
-
-export const startClock = () => dispatch => {
-  return setInterval(
-    () => dispatch({ type: actionTypes.TICK, light: true, ts: Date.now() }),
-    1000,
-  );
+export const addPost = () => {
+  return { type: actionTypes.POST};
 };
