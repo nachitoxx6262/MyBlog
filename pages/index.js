@@ -12,18 +12,18 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <span className={styles.span}>NachDev´s Blog!</span>
+          Bienvenidos a <span className={styles.span}>NachDev´s Blog!</span>
         </h1>
 
         <div className={styles.grid}>
           <Link href="/projects/myProjects" className={styles.card}>
-            <h3>Projects &rarr;</h3>
-            <p>Here you can see all the projects I did</p>
+            <h3>Proyectos &rarr;</h3>
+            <p>Disfruta y diviertete con los proyectos que realize!💪</p>
           </Link>
 
           <Link href="/learn/learningzone" className={styles.card}>
-            <h3>Learning zone &rarr;</h3>
-            <p>Do you want to learn about the latest technologies?</p>
+            <h3>Zona de aprendizaje &rarr;</h3>
+            <p>Quieres aprender sobre las tecnologias Web?</p>
           </Link>
 
           <a
@@ -31,7 +31,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>GitHub &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Aqui podras ver mis avances y mis proyectos en construcción.🚧</p>
           </a>
 
           <a
@@ -40,7 +40,7 @@ export default function Home() {
           >
             <h3>LinkedIn &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Estas interesado en el trabajo que realizo? Contactame y visita mi perfil.🙌
             </p>
           </a>
         </div>
