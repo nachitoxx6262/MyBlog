@@ -1,8 +1,15 @@
-const CREATE_POST = 'CREATE_POST'
+import data from "./data"
+export const actionTypes = {
+  ADD: 'ADD',
+  TICK: 'TICK',
+};
+export const addCount = () => dispatch => {
+  return dispatch({ type: actionTypes.ADD });
+};
 
-export function addPost(id, title) {
-    return {
-      type: CREATE_POST,
-      payload: { id, title },
-    }
-  }
+export const startClock = () => dispatch => {
+  return setInterval(
+    () => dispatch({ type: actionTypes.TICK, light: true, ts: Date.now() }),
+    1000,
+  );
+};
