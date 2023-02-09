@@ -16,15 +16,15 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="http://localhost:3000/projects/myProjects" className={styles.card}>
+          <Link href="/projects/myProjects" className={styles.card}>
             <h3>Projects &rarr;</h3>
             <p>Here you can see all the projects I did</p>
-          </a>
+          </Link>
 
-          <a href="http://localhost:3000/learn/learningzone" className={styles.card}>
+          <Link href="/learn/learningzone" className={styles.card}>
             <h3>Learning zone &rarr;</h3>
             <p>Do you want to learn about the latest technologies?</p>
-          </a>
+          </Link>
 
           <a
             href="https://github.com/nachitoxx6262"
