@@ -1,3 +1,4 @@
+import Style from "../../styles/learningzone.module.css"
 import Layout from "../../components/layout";
 import {addPost} from "../../redux/action"
 import Head from "next/head";
@@ -20,7 +21,7 @@ export default function LearningZone() {
         <h1>Learning Zone</h1>
         {data?.map((element)=>{return (
           <>
-        <h2>{element.title}</h2>
+        <h2 className={Style.titlepost}>{element.title}</h2>
         <p dangerouslySetInnerHTML={{__html: element.description}} />
           </>
         )})}
