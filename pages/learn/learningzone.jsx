@@ -1,12 +1,13 @@
 import Style from "../../styles/learningzone.module.css"
 import Layout from "../../components/layout";
-import {addPost} from "../../redux/action"
+import {addPost} from "../../redux/store"
 import Head from "next/head";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 export default function LearningZone() {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.post);
+  const data = useSelector((state) => state.publicaciones.post);
+  console.log(data)
   useEffect(() => {
     dispatch(addPost())
 

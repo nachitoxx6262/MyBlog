@@ -1,23 +1,25 @@
-import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
-import { createWrapper } from "next-redux-wrapper";
-import rootReducer from "./reducer";
-
-// initial states here
-const initalState = {};
-
-// middleware
-const middleware = [thunk];
-
-// creating store
-export const store = createStore(
-  rootReducer,
-  initalState,
-  composeWithDevTools(applyMiddleware(...middleware))
-);
-
-// assigning store to next wrapper
-const makeStore = () => store;
-
-export const wrapper = createWrapper(makeStore);
+import { configureStore } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
+import {data} from "./data"
+// create a slice 
+export const postslice= createSlice({
+name:"publicaciones",
+initialState:{
+     post:[]
+},
+reducers:{
+     addPost:(state)=>{
+        state.post = data
+     }
+   }
+})
+// config the store 
+const store= configureStore({
+   reducer: {
+      publicaciones: postslice.reducer
+   }
+})
+// export default the store 
+export default store
+// export the action
+export const {addPost} = postslice.actions

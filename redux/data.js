@@ -10,7 +10,7 @@ export const data = [
     title: "Variables y tipos de datos",
     description: `<article>
         <h3>Tipos de datos:</h3> 
-        <p><b>Strings:</b><i>cadenas de caracteres que representan datos textuales</i></p>
+        <p><b>Strings: </b><i>cadenas de caracteres que representan datos textuales</i></p>
         <p><b>Números:</b> <i>permite representar y manipular valores numéricos</i></p>
         <p><b>Booleanos:</b><i> representa un valor lógico y puede tener dos valores, true o false</i></p>
         <p><b>Undefined:</b> <i>representa una variable que no ha sido declarada o a la cual no se le ha asignado un valor.</i></p>
